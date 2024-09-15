@@ -8,7 +8,7 @@ import (
 )
 
 func MigrateDB() error {
-	// Открываем файл model.sql
+	// Открываем файл migration.sql
 	file, err := os.Open("./src/main/db/migration.sql")
 	if err != nil {
 		return fmt.Errorf("error opening migration.sql file: %v", err)
@@ -18,7 +18,7 @@ func MigrateDB() error {
 	// Читаем содержимое файла
 	sqlBytes, err := os.ReadFile("./src/main/db/migration.sql")
 	if err != nil {
-		return fmt.Errorf("error reading model.sql file: %v", err)
+		return fmt.Errorf("error reading migration.sql file: %v", err)
 	}
 
 	// Преобразуем содержимое файла в строку
