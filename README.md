@@ -16,6 +16,12 @@
 
    ```bash
    git clone https://github.com/kristrex/avito_test.git
-   cd avito_test ```
-2. Соберите и запустите контейнеры с помощью Docker Compose:
-``` docker-compose up --build ```
+   ```
+2. Перейдите в необходимую директорию:
+   ```
+   cd avito_test
+   ```
+3. Соберите и запустите контейнеры с помощью Docker Compose:
+   ```
+   docker-compose up --build
+   ```
